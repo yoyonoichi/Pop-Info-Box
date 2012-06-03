@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Pop Info Box</title>
+<style>
+/*** BODY WIDTH IS FIX SIZE AND MARGIN AUTO CENTERISED ***/
+/*body {
+	width:800px; margin:0 auto;
+}*/
+/*** BODY WIDTH IS FIX SIZE AND SPECIFIC MARGIN LEFT ***/
+/*body {
+	width:800px; margin-left:50px;
+}*/
+/*** BODY WIDTH IS 100% ***/
+body {
+	width:100%; margin:0; 
+}
+body {
+	font-family:Arial, Helvetica, sans-serif; text-align:center; font-size:0.85em;
+}
+#wrapper {
+	width:800px; margin:0 auto;	text-align:left;
+}
+ul {
+	list-style:none; padding:10px;
+}
+li {
+	width:100px; height:100px; float:left; margin:10px;
+}
+
+.popinfobox {
+	width:250px; text-align:left; font-size:0.85em;	
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="../popInfoBox.1.0.js"></script>
+<script>
+$(document).ready( function() {
+	$.popInfoBox();
+});
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+	<ul>
+    	<li class="apply_popinfobox" style="background:red;" content="<h3>What is Lorem Ipsum?</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>"></li>
+        <li class="apply_popinfobox" style="background:blue;" content="<h3>Who do we use it?</h3><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>"></li>
+        <li class="apply_popinfobox" style="background:yellow;" content="<h3>Who does it come from</h3><p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of &quot;de Finibus Bonorum et Malorum&quot; (The Extremes of Good and Evil) by Cicero, written in 45 BC."></li>
+    </ul>   
+	<div style="clear:both;"></div>
+	<div style="clear:both;margin-top:50px;">
+    	<p><b class="apply_popinfobox" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur enim nibh, placerat non gravida in, molestie quis ipsum. Etiam egestas elit sed dui iaculis a ornare mauris blandit. Morbi aliquam gravida tellus a semper. Ut pretium gravida nisi, in mattis erat varius eget.">Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit. In tortor quam, faucibus eget aliquam at, pretium sit amet diam. In varius lobortis arcu non mattis. Duis eu faucibus velit. Vivamus sem odio, condimentum nec dictum eget, pretium sed elit. Nullam at nunc sed quam laoreet elementum. Nam condimentum fringilla dui vitae lobortis. Suspendisse potenti. Aenean sollicitudin euismod sodales. Sed blandit accumsan lectus, tempor convallis risus tristique eu. Nulla facilisi.</p><p>Vestibulum eros magna, hendrerit vitae eleifend vel, euismod sed quam. Nulla ut urna odio, eget vestibulum ligula. Donec ultrices lectus ut diam cursus vehicula. Fusce consectetur, ipsum eget scelerisque consectetur, elit massa mollis mi, eu convallis quam sapien in arcu. Duis placerat nibh pretium massa rutrum fringilla posuere odio molestie. Praesent laoreet volutpat leo non dictum. Phasellus molestie eros quis est rhoncus pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p><p>Vestibulum blandit condimentum lectus ac tempor. Nullam auctor, dolor nec eleifend sagittis, risus sem vulputate felis, sit amet bibendum eros massa nec ligula. Etiam ligula orci, congue in ullamcorper ut, mollis eu libero. Ut tempor viverra sollicitudin. Proin eu accumsan ante. Nam venenatis cursus tortor et pretium. Aenean mollis lacinia urna, vitae mattis felis eleifend a.</p><p><b class="apply_popinfobox" content="Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur porttitor, est id semper volutpat, odio lacus sagittis leo, ac luctus diam eros eget quam. Vivamus ut cursus purus. Vestibulum vel purus ut risus aliquam feugiat a venenatis metus.">Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit. In tortor quam, faucibus eget aliquam at, pretium sit amet diam. In varius lobortis arcu non mattis. Duis eu faucibus velit. Vivamus sem odio, condimentum nec dictum eget, pretium sed elit. Nullam at nunc sed quam laoreet elementum. Nam condimentum fringilla dui vitae lobortis. Suspendisse potenti. Aenean sollicitudin euismod sodales. Sed blandit accumsan lectus, tempor convallis risus tristique eu. Nulla facilisi.</p><p>Vestibulum eros magna, hendrerit vitae eleifend vel, euismod sed quam. Nulla ut urna odio, eget vestibulum ligula. Donec ultrices lectus ut diam cursus vehicula. Fusce consectetur, ipsum eget scelerisque consectetur, elit massa mollis mi, eu convallis quam sapien in arcu. Duis placerat nibh pretium massa rutrum fringilla posuere odio molestie. Praesent laoreet volutpat leo non dictum. Phasellus molestie eros quis est rhoncus pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p><p>Vestibulum blandit condimentum lectus ac tempor. Nullam auctor, dolor nec eleifend sagittis, risus sem vulputate felis, sit amet bibendum eros massa nec ligula. Etiam ligula orci, congue in ullamcorper ut, mollis eu libero. Ut tempor viverra sollicitudin. Proin eu accumsan ante. Nam venenatis cursus tortor et pretium. Aenean mollis lacinia urna, vitae mattis felis eleifend a.</p>
+    </div>
+        
+</div>
+</body>
+</html>
